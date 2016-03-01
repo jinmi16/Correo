@@ -1,0 +1,119 @@
+.ui-fieldset .ui-fieldset-legend
+{
+    font-weight: bold; 
+    text-align: center;
+}
+
+#st1 {
+    bottom: 16%;
+    right: 83%;
+    position: fixed;
+}
+
+#fecha{
+    width: 120px;
+}
+
+.ui-accordion-content{
+    margin-left: -13px;
+}
+
+.ui-layout-north { 
+    z-index:20 !important; 
+    overflow:visible !important; 
+} 
+
+.ui-layout-north .ui-layout-unit-content { 
+    overflow:visible !important; 
+} 
+
+.ui-notificationbar{
+    z-index:20 !important; 
+    overflow:visible !important; 
+}
+
+.ui-selectonemenu-items
+{
+    font-size: 0.67em;
+    text-align: left;
+}
+.ui-growl {
+    right:10px !important;
+    top:40px !important;
+    width:295px !important;
+}
+.ui-growl-item {
+    background-color:#FBFCFD;
+    border:1px solid #D1626C;
+    border-radius:3px;
+    padding:20px !important;
+}
+.ui-growl-message {
+    color:#D1626C !important;
+    font-size:17px !important;
+    line-height:20px !important;
+    width:170px !important;
+}
+.ui-growl-item-container {
+    opacity:1;
+    padding:14px;
+}
+
+.jqplot-target, .jqplot-axis {
+    color:#778D9B;
+}
+
+.ui-inputfield {
+    font-weight:normal;
+    margin:0;
+    outline:none medium;
+    padding:4px;
+}
+
+.ui-inputfield {    
+    -webkit-transition:all 0.5s ease;
+    background-color:#EDF3F6;
+    border:1px solid #C6D6DF;
+    border-radius:3px;
+    color:#778D9B;
+    font-family:ralewaymedium !important;
+    font-size:14px;
+    padding:9px !important;
+    transition:all 0.5s ease;
+}
+
+.ui-inputfield.ui-state-hover, .ui-inputfield.ui-state-focus {
+    background-color:#F9FBFC;
+    border:1px solid #0099cc;
+    color:#0099cc !important;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius:5px;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius:5px;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius:5px;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius:5px;
+}
+
+.ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+}
+
+.Fleft {
+  float:left;
+}
+
+.Wid90 {
+  width:90%;
+}

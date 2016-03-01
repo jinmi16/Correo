@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Correo</title>  
+        <link rel="stylesheet" type="text/css" href="../css/ui.css" />
+    </h:head>
+    <h:body style="background-image: url(http://localhost:8084/Multimedia01/img/backspark.png); background-repeat: repeat" >
+
+        <h:form id="correo">   
+            
+            <p:growl id="msg" sticky="false"/>
+            
+            <p:fieldset style="margin-bottom:20px">
+                
+                <h:panelGroup layout="block" style="display: block; width: 100%; border-bottom: solid 1px #C3CCD5; margin-bottom: 10px !important;">
+                    <h1 style="font-size: 25px;color: #3B3D3F; font-family: 'Arial';padding: 10px 0px; margin-bottom: 10px !important; font-weight: bold;"> Formulario de contacto </h1>
+                </h:panelGroup>
+
+                <h:panelGrid columns="2">
+                    <h4>De :</h4>
+                    <p:inputText id="email" label="email" value="#{correo.contacto.correo}" required="true" style="width: 250px">
+                        <p:watermark for="email" value="email" />
+                    </p:inputText>
+                    <h4>Asunto :</h4>                            
+                    <p:inputText id="asunto" label="asunto" value="#{correo.contacto.asunto}" required="true" style="width: 250px"/>    
+                </h:panelGrid>
+
+                <p:panelGrid columns="2" style="margin-right: 72%;padding: 10px 15px 15px 10px;text-align: center">
+                    <h:outputLabel for="nombre" value="Nombre"/>
+                    <p:inputText id="nombre" label="nombre" value="#{correo.contacto.nombre}" required="true"/>                    
+
+                    <h:outputLabel for="apellido" value="Apellidos "/>
+                    <p:inputText id="apellido" label="apellido" value="#{correo.contacto.apellido}" required="true"/>                    
+
+                    <h:outputLabel for="telefono" value="Celular"/>
+                    <p:inputMask id="telefono" label="telefono" value="#{correo.contacto.celular}" required="true" mask="999-999999"/>                                                                          
+
+                    <h:outputLabel value="Mensaje"/>
+                    <p:inputTextarea id="comentarios" label="comentarios" value="#{correo.contacto.mensaje}" required="true" cols="23" rows="5"/>                    
+
+
+                </p:panelGrid>
+                <h:panelGroup/>
+                <p:commandButton value="Enviar" action="#{correo.enviar()}" actionListener="#{correo.enviar()}" update="msg" ajax="false" style="margin-top: 5px"/>
+
+            </p:fieldset>            
+        </h:form>
+
+    </h:body>
+</html>
+
